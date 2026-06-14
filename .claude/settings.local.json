@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(npm install -g clerk)",
+      "PowerShell(clerk auth login)",
+      "PowerShell(clerk --version)",
+      "PowerShell(\\(Get-Command clerk -ErrorAction SilentlyContinue\\).Source)",
+      "PowerShell(node \"C:\\\\Users\\\\Samsung\\\\AppData\\\\Roaming\\\\npm\\\\node_modules\\\\clerk\\\\bin\\\\clerk\" --version 2>&1)",
+      "PowerShell(node \"C:\\\\Users\\\\Samsung\\\\AppData\\\\Roaming\\\\npm\\\\node_modules\\\\clerk\\\\bin\\\\clerk\" --help; Write-Output \"exit: $LASTEXITCODE\")",
+      "PowerShell(node -e \"console.log\\(process.platform, process.arch\\)\")",
+      "PowerShell(npm install -g @clerk/cli-win32-x64@1.5.0)",
+      "PowerShell(node -e \"try { const p = require.resolve\\('@clerk/cli-win32-x64/bin/clerk.exe'\\); console.log\\('found:', p\\); } catch\\(e\\) { console.log\\('not found:', e.message\\); }\" 2>&1)",
+      "PowerShell(npm root -g)",
+      "PowerShell(& \"C:\\\\Users\\\\Samsung\\\\AppData\\\\Roaming\\\\npm\\\\node_modules\\\\@clerk\\\\cli-win32-x64\\\\bin\\\\clerk.exe\" --version)",
+      "WebFetch(domain:clerk.com)",
+      "PowerShell(npx drizzle-kit push --config=drizzle-config.ts)",
+      "PowerShell(npm run dev)",
+      "PowerShell(npx add-mcp https://mcp.neon.tech/mcp)",
+      "PowerShell(claude mcp list 2>&1)",
+      "PowerShell(npx tsx --env-file=.env DB/seed.ts)",
+      "PowerShell(npx tsx --env-file=.env DB/test-connection.ts)",
+      "PowerShell(npx tsx --env-file=.env DB/clear.ts)",
+      "PowerShell(npx drizzle-kit push --config=drizzle-config.ts 2>&1)",
+      "PowerShell(gh auth status 2>&1)"
+    ]
+  }
+}
