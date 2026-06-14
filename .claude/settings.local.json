@@ -21,7 +21,11 @@
       "PowerShell(npx tsx --env-file=.env DB/test-connection.ts)",
       "PowerShell(npx tsx --env-file=.env DB/clear.ts)",
       "PowerShell(npx drizzle-kit push --config=drizzle-config.ts 2>&1)",
-      "PowerShell(gh auth status 2>&1)"
+      "PowerShell(gh auth status 2>&1)",
+      "PowerShell(git config user.email \"dantin@hotmail.com\")",
+      "PowerShell(git config user.name \"DanilodSouza\")",
+      "PowerShell(git remote add origin https://github.com/DanilodSouza/Project-setup.git)",
+      "PowerShell(git push -u origin main)"
     ]
   }
 }
