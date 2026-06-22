@@ -4,6 +4,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 @AGENTS.md
 
+## IMPORTANT: Docs-First Rule
+
+**Before generating any code**, you MUST first check the `docs/` directory for a relevant guide. If a docs file exists that covers the feature, component, or domain you are working on, read it in full before writing a single line of code. The docs take precedence over assumptions from training data.
+
 ## Commands
 
 ```bash
@@ -12,7 +16,7 @@ npm run build    # Production build
 npm run lint     # Run ESLint
 ```
 
-No test runner is configured yet.
+- /docs/ui.md 
 
 ## Architecture
 

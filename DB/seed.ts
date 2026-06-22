@@ -11,7 +11,10 @@ import {
 const sql = neon(process.env.DATABASE_URL!);
 const db = drizzle(sql);
 
-const USER_ID = "user_3F6WHz9lHRgj4UwjAikU2pQE3Hg";
+const USER_ID = process.argv[2] ?? "user_3F6WHz9lHRgj4UwjAikU2pQE3Hg";
+if (!process.argv[2]) {
+  console.warn("⚠ No user ID passed — using default. Pass your Clerk user ID: npx tsx DB/seed.ts <your_user_id>");
+}
 
 async function seed() {
   console.log("Seeding database...");
